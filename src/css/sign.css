@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;900&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "inter";
+    font-style: normal;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 35px 0px 20px 0px;
+    padding: 10px 0px 18px 0px;
+
+}
+
+.content {
+    margin-top: 90px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content p.tittle {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    color: #2D3748;
+    padding-bottom: 6px;
+    margin-bottom: 10px;
+}
+
+.content h2 {
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 39px;
+    color: #1A202C;
+    margin-bottom: 48px;
+}
+
+form.form_signin {
+    width: 50%;
+}
+
+.form_signin p label {
+
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    color: #4A5568;
+
+}
+
+.form_signin input {
+    margin: 11px 0px 12px 0px;
+    font-family: 'Roboto';
+   
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #C4C4C4;
+    background-color: #fff;
+    border: 1px solid #37A9CD;
+    padding: 17px 5px 17px 17px;
+
+}
+
+input, button {
+    outline: none;
+    border: none;
+    width: 100%;
+    border-radius: 5px;
+
+}
+
+.form_signin .btn_form {
+    font-weight: 600;
+    margin-top: 20px;
+    font-size: 16px;
+    line-height: 19px;
+    background: #37A9CD;
+    color: #FFFFFF;
+    padding: 15px 20px 16px 20px;
+}
+
+.align_center {
+    font-family: 'Inter';
+   
+    text-align: center;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.align_center a {
+    color: #37A9CD;
+    margin-top: 32px;
+    display: block;
+    margin-bottom: 16px;
+}
+
+.align_center p {
+    color: #616161;
+}
+
+.align_center p a {
+    display: inline;
+}
+
+@media (min-width: 740px) and (max-width: 1023px) {
+    form.form_signin {
+        width: 70%;
+
+    }
+}
+
+@media (max-width:740px) {
+    .content {
+        margin-top: 80px;
+    }
+
+    .content h2 {
+
+        font-size: 30px;
+        text-align: center;
+    }
+
+    form.form_signin {
+        width: 60%;
+
+    }
+
+    .form_signin input {
+        margin: 10px 0px 10px 0px;
+        padding: 15px 5px 15px 10px;
+    }
+
+    .form_signin .btn_form {
+        padding: 14px 20px 14px 20px;
+    }
+
+    .align_center {
+        font-size: 17px;
+    }
+
+    .align_center a {
+
+        margin-bottom: 15px;
+    }
+}

@@ -1,0 +1,381 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    height: 80px;
+    margin-bottom: 70px;
+
+}
+
+.col.l-3.header__signup {
+    display: flex
+}
+
+.bander {
+    margin-top: 50px;
+}
+
+.bander__content h2 {
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 48px;
+
+    color: #111928;
+}
+
+.bander .bander__content {
+    padding-right: 10px;
+}
+
+.bander__content h2 span {
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 48px;
+    margin: 30px 0px;
+}
+
+.bander__content--descr {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: #111928;
+}
+
+.bander__content form {
+    display: flex;
+    align-items: center;
+    margin-top: 32px;
+    font-size: 14px;
+}
+
+.bander__content form input {
+    margin-right: 20px;
+    padding: 9px 0px 9px 15px;
+    letter-spacing: -0.02em;
+    color: rgba(0, 0, 0, 0.6);
+    height: 42px;
+    opacity: 0.8;
+    min-width: 180px;
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+.bander__content form button {
+    padding: 12px 20px 13px 20px;
+    letter-spacing: 0.005em;
+    height: 42px;
+    font-weight: 600;
+    border-radius: 5px;
+    margin-bottom: 0;
+    background-color: #111928;
+    color: #FFFFFF;
+}
+
+.iteam_tittle {
+    margin-bottom: 48px;
+}
+
+h1.tittle {
+
+    text-align: left;
+    padding-bottom: 32px;
+}
+
+h5.iteam--description {
+    padding: 24px 0px 12px 0px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 32px;
+    color: #111928;
+}
+
+.iteam {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    /* flex: 1; */
+}
+
+.iteam .iteam__time p {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 20px;
+    color: #F54748;
+}
+
+.iteam button {
+    padding: 12px 0px 13px 0px;
+    width: 100%;
+    background-color: #111928;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.005em;
+    color: #FFFFFF;
+}
+
+.footer {
+    margin-top: 7px;
+}
+
+/* trang 3 */
+.col.l-4.m-4.c-12.iteam {
+    display: flex;
+}
+
+@media (max-width:740px) {
+    .wide {
+        margin: 0px -10px;
+        padding: 0px 10px;
+    }
+
+    .header {
+        margin-bottom: 0;
+    }
+
+    .col.l-6.m-6.c-12.bander__content {
+        margin-top: 0px;
+    }
+
+    .bander {
+        margin-top: 50px;
+    }
+
+    .bander__content h2 {
+
+        font-size: 40px;
+
+    }
+
+    .bander .bander__content {
+        padding-right: 10px;
+    }
+
+    .bander__content h2 span {
+
+        font-size: 40px;
+
+        margin: 30px 0px;
+    }
+
+    .bander__content--descr {
+
+        font-size: 18px;
+        line-height: 22px;
+
+        color: #111928;
+    }
+
+    .bander__content form {
+
+        margin-top: 32px;
+        font-size: 14px;
+    }
+
+    .bander__content form input {
+        margin-right: 20px;
+        padding: 9px 0px 9px 15px;
+
+        height: 42px;
+
+        min-width: 180px;
+
+    }
+
+    .bander__content form button {
+        padding: 12px 20px 13px 20px;
+
+        height: 42px;
+
+    }
+
+    .iteam_tittle {
+        margin-bottom: 48px;
+    }
+
+    h1.tittle {
+
+
+        padding-bottom: 32px;
+    }
+
+    h5.iteam--description {
+        padding: 24px 0px 12px 0px;
+
+        font-size: 18px;
+
+    }
+
+    .iteam .iteam__time p {
+
+        font-size: 20px;
+
+        margin-bottom: 20px;
+    }
+
+    .iteam button {
+        padding: 12px 0px 13px 0px;
+        width: 60%;
+        margin: auto;
+
+        font-size: 14px;
+    }
+
+    .header {
+        margin-bottom: 0px;
+    }
+
+    .bander {
+        margin-top: 0px;
+    }
+
+    .bander__content h2 {
+        margin-top: 18px;
+        font-size: 25px;
+    }
+
+    .bander__content h2 span {
+        font-size: 25px;
+        margin: 10px 0px;
+    }
+
+    .bander__content--descr {
+        font-size: 16px;
+    }
+
+    .bander__content form {
+
+        margin-top: 20px;
+        font-size: 13px;
+    }
+
+    .bander__content form input {
+        margin-right: 10px;
+
+    }
+
+    .bander__content form button {
+
+        font-size: 15px;
+        margin-bottom: 0;
+    }
+
+    .iteam_tittle {
+        margin-bottom: 30px;
+    }
+
+    h1.tittle {
+        font-size: 28px;
+        ;
+        padding-bottom: 20px;
+    }
+
+    h5.iteam--description {
+        padding: 15px 0px 8px 0px;
+        font-size: 17px;
+
+    }
+
+    .iteam .iteam__time p {
+
+        font-size: 17px;
+
+        margin-bottom: 16px;
+
+    }
+
+}
+
+@media (min-width: 740px) and (max-width: 1023px) {
+    .wide {
+        width: 700px;
+    }
+    .header {
+        margin-bottom: 40px;
+    }
+
+    .col.l-3.header__signup {
+        display: flex
+    }
+
+    .bander {
+        margin-top: 30px;
+        flex-flow: column-reverse;
+    }
+
+    .bander__content h2 {
+
+        font-size: 35px;
+
+    }
+    button.registration {
+        width: 76px;
+    }
+    .bander .bander__content {
+        margin-top: 35px;
+        padding-right: 10px;
+    }
+
+    .bander__content h2 span {
+        font-size: 30px;
+        margin: 25px 0px;
+    }
+
+    .bander__content--descr {
+        font-size: 17px;
+    }
+
+    .bander__content form {
+
+        margin-top: 30px;
+        font-size: 14px;
+    }
+
+    .bander__content form input {
+        margin-right: 15px;
+        padding: 9px 0px 9px 10px;
+    }
+
+    .bander__content form button {
+        padding: 9px 10px 10px 10px;
+        font-size: 16px;
+        margin-bottom: 0;
+    }
+
+    .iteam_tittle {
+        margin-bottom: 40px;
+    }
+
+    h1.tittle {
+        font-size: 35px;
+        ;
+        padding-bottom: 28px;
+    }
+
+    h5.iteam--description {
+        padding: 20px 0px 10px 0px;
+        font-size: 17px;
+
+    }
+
+    .iteam .iteam__time p {
+
+        font-size: 19px;
+
+        margin-bottom: 18px;
+
+    }
+
+    .iteam button {
+        padding: 12px 0px 13px 0px;
+        font-size: 14px;
+    }
+
+    .footer {
+        margin-top: 7px;
+    }
+}
