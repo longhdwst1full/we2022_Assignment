@@ -24,12 +24,15 @@
     flex-direction: column;
 }
 
-.content_main-left ul li a {
+.content_main-left ul li {
     font-size: 20px;
     padding-bottom: 24px;
+    cursor: pointer;
     line-height: 24px;
+    font-weight: 600;
     color: #000000;
 }
+
 .hien{
     display: none;
 }
@@ -95,8 +98,28 @@ form.hien select{font-weight: 600;
         padding-bottom: 15px;
         margin-bottom: 10px;
     }
-    
-    
+    .container223{
+        background-color: rgba(0, 0, 0, 0.6);
+        position: fixed;
+        ;
+        right: 0;
+        left: 0;
+        display: none;
+        top: 0;
+        bottom: 0;
+    }
+    .cart_pro {
+        animation: modalShow 0.3s;
+        float: right;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        width: 300px;
+        min-height: 500px;
+        border-radius: 5px;
+        background-color: #fff;
+    }
 }
 
 @media (min-width: 740px) and (max-width: 1023px) {
@@ -122,3 +145,68 @@ form.hien select{font-weight: 600;
         margin-right: -12px;
     }
 }
+.container223 {
+    background-color: rgba(0, 0, 0, 0.6);
+position: fixed;
+;
+right: 0;
+left: 0;
+display: none;
+top: 0;
+bottom: 0;
+}
+.cart_pro{
+    animation: modalShow 0.3s;
+background-color: greenyellow;
+position: absolute;
+top: 50%;  left: 50%;
+transform: translate(-50%, -50%);
+border-radius: 5px;
+    width: 80%;
+    min-height: 200px;       
+}
+.hidden {
+display: block;
+}
+.cart_pro >table{
+color: white;
+font-size: 18px;
+width: 100%;
+margin: 0 auto;
+border-collapse: collapse;
+}
+table,
+td,
+tr {
+    border: 1px solid #fff;
+}
+table tr td img {
+    height: 110px;
+    padding: 0;
+    margin:auto;
+}
+
+table th,td {
+text-align: center;
+padding: 8px;
+}
+tr td:first-child{ 
+font-weight: 600;
+
+}
+td button {
+padding: 10px 15px;
+background-color: rgb(244, 46, 46);
+border-radius: 5px;
+font-size:18px;
+color: azure;
+}
+td input {
+border: 1px solid #ccc;
+outline: none;
+width: 80%;
+padding: 8px;
+border-radius: 10px;
+}
+
+tbody{min-height: 100px;}

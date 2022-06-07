@@ -13,7 +13,8 @@
 <body>
     <div class="grid wide">
         <div class="logo">
-          <a href="./index.html">  <img src="./src/images/icon/Logo.png" alt=""></a></div>
+            <a href="./index.html"> <img src="./src/images/icon/Logo.png" alt=""></a>
+        </div>
         <div class="content">
             <div class="row">
                 <p class="col tittle">Welcome back</p>
@@ -24,7 +25,8 @@
                     Login to your account
                 </h2>
             </div>
-            <form action="" class="form_signin" method="post">
+
+            <form action="" onsubmit="return validate()" class="form_signin" method="post">
                 <div>
                     <p>
                         <label for="">
@@ -32,6 +34,8 @@
                         </label>
                     </p>
                     <input type="text" id="email_form" placeholder="John.snow@gmail.com">
+                    <p id="error_email_form"></p>
+
                 </div>
                 <div>
                     <p>
@@ -40,18 +44,29 @@
                         </label>
 
                     </p> <input type="text" id="pass_pass" placeholder="*********">
+                    <p id="error_pass_pass"></p>
+
                 </div>
-                <button class="btn_form">Login now</button>
-                <a href="">
-                <button class="btn_form" style="background-color: #2D3748;;"><img src="./src/images/icon/google.png" style="margin-right: 10px;" alt=""> Or sign-in with google</button>
-            </a> 
+                <a href="#">
+
+                    <button class="btn_form">Login now</button>
+                </a>
+                <a href="./index.html">
+
+                    <button class="btn_form" style="background-color: #2D3748;;">
+                        <img src="./src/images/icon/google.png" style="margin-right: 10px;" alt="">
+                        Or sign-in with google
+                    </button>
+                </a>
+
                 <div class="align_center">
-                <a href="">Forgot password?</a>
-                <p> Dont have an account?<a href=""> Join free today</a></p>
-            </div>
+                    <a href="#">Forgot password?</a>
+                    <p> Dont have an account?<a href="#"> Join free today</a></p>
+                </div>
             </form>
         </div>
     </div>
+    <script src="./src/js/sign/form_sign_in.js"></script>
 </body>
 
 </html>

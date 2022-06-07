@@ -1,4 +1,4 @@
-const iteam_content_main = document.querySelector(".row .iteam_tittle");
+const iteam_content_main = document.querySelector(".iteam_tittle");
 const iteam_array = [{
     image: './src/images/imageHome/image 26.png',
     id: 1,
@@ -56,6 +56,70 @@ const iteam_array = [{
 
 ];
 
+let item = "";
+function showProduct(data) {
+    iteam_content_main.innerHTML = "";
+    data.forEach(function (iteam, index) {
+        console.log(iteam, index);
+        iteam_content_main.innerHTML += `<div class="col l-4 m-4 c-12 iteam">
+                    <div class="iteam__img">
+                        <a href="./detail.html?#detai_item?id=${index}"> 
+                        
+                        <img src="${iteam.image}">
+                        </a>
+                    </div>
+                        <a href="./detail.html?#detai_item?id=${index}">
+                        <h5 class="iteam--description">
+                            ${iteam.name}
+                        </h5>
+                        </a>
+                     <div class="iteam__time">
+                        <p>
+                            <img src="./src/images/icon/time.png">
+                            30 Minutes
+                        </p>
+                        <p>
+                            <img src="./src/images/icon/ForkKnife.png">
+                            Snack
+                        </p>   
+                     </div>
+                </div>`
+    })
+}
+
+
+showProduct(iteam_array)
+
+function showCategory() {
+
+}
+
+
+const filterSelect = document.querySelector("#filter-select")
+function filterProduct() {
+    const over30 = iteam_array.filter(function (item) {
+        return item.price > 30
+    })
+    const under30 = iteam_array.filter(function (item) {
+        return item.price <= 30
+    })
+    if (filterSelect.value == 'over30') {
+        showProduct(over30)
+    }
+    if (filterSelect.value == 'under30') {
+        showProduct(under30)
+    }
+    if (filterSelect.value == 'all') {
+        showProduct(iteam_array)
+    }
+}
+filterSelect.addEventListener("change", filterProduct)
+
+
+
+
+// iteam_icon product
+const category_list_img = document.querySelector(".row.category__list");
 
 
 let ListCategory = [
@@ -90,113 +154,39 @@ let ListCategory = [
         name: "Chocolate"
     }
 ];
+let htmls = ListCategory.map(function (value, index) {
+    return ` <div class="col l-2 m-4 c-4  category__tittle">
+<a href="./product.html?#list_category?id=${Number(index + 1)}">
+<img src="${value.image}"></a> 
+
+ <p>${value.name}</p>
+</div>`
+}).join("");
+category_list_img.innerHTML = htmls;
 
 
-let iteam_tittle = document.querySelector(".iteam_tittle");
-let url_id_product = document.location.hash.slice(document.location.hash.length - 1);
-
-
-let showproduct = document.querySelector('.hien');
-let showproduct_flex = document.querySelector('.flex');
-
-
-function showProduct(data) {
-    showproduct_flex.innerHTML = "";
-    data.forEach((iteam, index) => {
-        showproduct_flex.innerHTML += `
-            <li class="">
-            ${iteam.name}
-            </li>`
-    })
-}
-
-showProduct(ListCategory)
-
-
-function show_iteam_array(data) {
-    iteam_content_main.innerHTML = ""
-    data.forEach(function (iteam, index) {
-
-        // console.log(iteam);
-        iteam_content_main.innerHTML += ` 
-    <div class="col l-4 m-4 c-12 iteam">
-        <div class="iteam__img">
-            <a href="./detail.html?#detai_item?id=${index}">
-            <img src="${iteam.image}">
-            </a>
-            </div>
-            <a href="./detail.html?#detai_item?id=${index}"> 
-            <h5 class="iteam--description">${iteam.name}</h5>
-            </a>
-            <div class="iteam__time">
-            <p class="price_js">$${iteam.price}</p>
-        </div>
-    <button>Add To Cart</button>
-</div>
-`
-    })
-}
-
-
-
-let ul_li_a = document.querySelectorAll("ul.flex li");
-
-let inde_id;
-
-
-function layindex() {
-
-    ul_li_a.forEach(function (item, index) {
-        item.onclick = function () {
-            inde_id = index + 1;
-
-
-            filter_prod(inde_id);
-
-        }
-    })
-
-}
-
-function filter_prod(number) {
-    console.log(number)
-    let proId_1 = iteam_array.filter(function (item) {
-        return item.category === number;
-    })
-    show_iteam_array(proId_1);
-
-}
-
-if (url_id_product) {
-
-    filter_prod(Number(url_id_product))
-
-}
-else {
-    show_iteam_array(iteam_array)
-
-    layindex()
-}
-
-const hien_form_mobie = document.querySelector("#filterSelect");
-
-let index_data_product= hien_form_mobie.querySelector("option").getAttribute('data-index'); 
-console.log(index_data_product);    
-let opption_product = document.querySelectorAll("#filterSelect>option")
-
-hien_form_mobie.addEventListener('change', function () {
-    console.log(this)
-    console.log(index_data_product)
-   ListCategory.forEach(function (item,index){
-       if(hien_form_mobie.value==""){
-        show_iteam_array(iteam_array)
-       }
-       else if(hien_form_mobie.value==item.name){
-           console.log(item.name,index)
-           filter_prod(Number(index)+1);
-        
-       }
-       
-   })
-
-})
+// function detailProduct() {
+//     const prdId = new URLSearchParams(window.location.search).get('id')
+//     console.log(prdId)
+//     const product = iteam_array.find(function(item){
+//         return item.id == prdId
+//     })
+//     // console.log(product);
+//     const detailProductDiv = document.querySelector('.detail-product')
+//     // console.log(detailProductDiv);
+//     detailProductDiv.innerHTML = `
+//         <div class="product-info">
+//             <h2>${product.name}</h2>
+//             <p class="price">$ ${product.price}</p>
+//             <p class="desc">${product.desc}</p>
+//             <form action="">
+//                 <input type="text" placeholder="Quantity">
+//                 <button type="submit">Add To Cart</button>
+//             </form>
+//         </div>
+//         <div class="product-img">
+//             <img src="${product.image}" alt="">
+//         </div>
+//     `
+// }
+// detailProduct()

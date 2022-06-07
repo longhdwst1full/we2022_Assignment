@@ -13,7 +13,7 @@
 <body>
     <div class="grid wide">
         <div class="logo">
-       <a href="./index.html">    <img src="./src/images/icon/Logo.png" alt=""></a>
+       <a href="./index.html">  <img src="./src/images/icon/Logo.png" alt=""></a>
         </div>
         <div class="content">
             <p class=" tittle">Welcome back</p>
@@ -21,7 +21,7 @@
                 Create Account
             </h2>
 
-            <form action="" class="form_signin" method="post">
+            <form action="" onsubmit="return validate()"class="form_signin" method="post">
                 <div>
                     <p>
                         <label for="">
@@ -29,6 +29,8 @@
                         </label>
                     </p>
                     <input type="text" id="email_form" placeholder="John.snow@gmail.com">
+                    <p id="error_email_form"></p>
+
                 </div>
                 <div>
                     <p> <label for="">
@@ -36,6 +38,8 @@
                         </label>             
                       </p>
                        <input type="password" id="pass_pass" placeholder="*********">
+                    <p id="error_pass_pass"></p>
+
                 </div>
                 <div>
                     <p> <label for="">
@@ -43,12 +47,15 @@
                         </label>             
                       </p>
                        <input type="password" id="pass_pass-repla" placeholder="*********">
+                    <p id="error_pass_pass-repla"></p>
+
                 </div>
                 <button class="btn_form">Create Now</button>
 
             </form>
         </div>
     </div>
+    <script src="./src/js/sign/form_refren.js"></script>
 </body>
 
 </html>

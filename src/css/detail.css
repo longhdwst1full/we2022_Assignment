@@ -119,6 +119,11 @@ h5.iteam--description {
 }
 
 .footer {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 15px 0px;
+    border-top: 1px solid gray;
     margin-top: 7px;
 }
 

@@ -6,72 +6,58 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
-   
+
     <link rel="stylesheet" href="./src/css/gridsystem.css">
-    
+
     <link rel="stylesheet" href="./src/css/style.css">
     <link rel="stylesheet" href="./src/css/detail.css">
     <link rel="stylesheet" href="./src/css/product.css">
     <title>Document</title>
+    
 </head>
 
 <body>
     <div class="grid wide">
         <div class="row header">
-           
+
         </div>
         <div class="wide content ">
             <div class="row  bander">
                 <a href="#">
-                    <img src="./src/images/imageProduct/banner.png"  width="100%">
+                    <img src="./src/images/imageProduct/banner.png" width="100%">
                 </a>
-              
+
             </div>
 
             <div class="row content__main">
                 <div class="col l-2 m-3 c-0 content_main-left">
-                    <ul class="flex ">
-                        <li class=""><a href="#">Breakfast</a></li>
-                        <li class=""><a href="#">Vegan</a></li>
-                        <li class=""><a href="#">Meat</a></li>
-                        <li class=""><a href="#">Dessert</a></li>
-                        <li class=""><a href="#">Lunch</a></li>
-                        <li class=""><a href="#">Chocolate</a></li>
+                    <ul class="flex" id>
+
                     </ul>
                 </div>
-                <form action="" class="hien" style="">
-                    <select name="" id="">
-                        <option value="Breakfast">Breakfast</option>
-                        <option value="Vegan">Vegan</option>
-                        <option value="Meat">Meat</option>
-                        <option value="Dessert">Dessert</option>
-                        <option value="Lunch">Lunch</option>
-                        <option value="Chocolate">Chocolate</option>
+                <form action="" class="hien">
+                    <select name="" id="filterSelect">
+                        <option data-index="0" value="">Lọc sản phẩm</option>
+                        <option data-index="1" value="Breakfast">Breakfast</option>
+                        <option data-index="2" value="Vegan">Vegan</option>
+                        <option data-index="3" value="Meat">Meat</option>
+                        <option data-index="4" value="Dessert">Dessert</option>
+                        <option data-index="5" value="Lunch">Lunch</option>
+                        <option data-index="6" value="Chocolate">Chocolate</option>
                     </select>
                 </form>
                 <div class="col l-10 m-9 c-11 content__main__tittle">
-                    <div class="row iteam_tittle">
-                        <!-- <div class="col l-4 m-4 c-12 iteam">
-                            <div class="iteam__img">
-                                <a href="#"><img src="./src/images/imageProduct/image 26.png" alt="">
-                                </a></div>
-                            <h5 class="iteam--description">Fresh and Healthy Mixed Mayonnaise Salad</h5>
-                            <div class="iteam__time">
-                                <p>$30</p>
-                            </div>
-                            <button>Add To Cart</button>
-                        </div>
-
-                        -->
+                    <div id="list_category" class="row iteam_tittle">
+                        <!-- hiển thị -->
                     </div>
-                   
-                   
+
+
                 </div>
             </div>
 
         </div>
         <div class=" footer">
-           
+
         </div>
     </div>
     <div class="sub_menu_hide">
@@ -88,11 +74,49 @@
             </ul>
         </div>
     </div>
+
+    <div class="container223">
+        <div class="cart_pro " >
+        <table id="cart" border="1">
+            <thead>
+                <tr>
+                    <th colspan="1">Tên sản phẩm</th>
+                    <th>Ảnh</th>
+                    <th>Giá</th>
+                    <th>Số lượng</th>
+                    <th> Chọn</th>
+                    <!-- <th class="text-center">Thành tiền</th> -->
+                </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="2">Tổng</td>
+                    <td class="tt">
+                        <p><span class="tt_show">0</span></p>
+                    </td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+    </div>
+
+
+
+
+
+
     <script src="./src/js/home/header.js"></script>
     <script src="./src/js/home/navbar_menu.js"></script>
     <script src="./src/js/product/product.js"></script>
-    
+
     <script src="./src/js/home/footer.js"></script>
+    <script src="./src/js/product/cart.js"></script>
+
+
+
 </body>
 
 

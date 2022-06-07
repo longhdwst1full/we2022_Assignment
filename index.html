@@ -14,7 +14,7 @@
 
 <body>
     <div class="grid wide">
-        <div class="row header">
+        <div class="row header" id="header_index">
         </div>
         <div class="wide content ">
             <div class="row  bander">
@@ -46,6 +46,18 @@
                     sed do eiusmod tempor incididunt ut <br> labore et dolore magna aliqut enim ad minim </p>
             </div>
             <div class=" wide content__main">
+                <div class="filter">
+                    <select name="" id="filter-select">
+                        <option value="" hidden>Lọc giá</option>
+                        <option value="all">Tất cả</option>
+                        <option value="under30">Dưới 30 $</option>
+                        <option value="over30">Trên 30 $</option>
+                    </select>
+                </div>
+                </div>
+
+                </select>
+                
                 <div class="row iteam_tittle">
 
                     <!--   
@@ -87,30 +99,51 @@
                 <div class="row">
                     <h1 class="col l-12 m-12 c-12">Contact Me</h1>
                 </div>
-                <form action="" class="wide">
-                    <div class="row form_info">
-                        <div class="col l-6 m-6 c-12 form_left">
-                            <p> <label for="">Name</label></p>
-                            <input type="text" placeholder="Enter your name ...">
-                            <p> <label for="">Subject</label></p>
-                            <input type="text" placeholder="Enter subject... ...">
-                        </div>
-                        <div class="col l-6 m-6 c-12 form_left ">
-                            <p> <label for="">emAIL aDDRESS</label></p>
-                            <input type="text" placeholder="Your email address... ...">
-                            <p> <label for="">ENquiry type</label></p>
-                            <select name="" id="">
-                                <option value="">Advertising...
+                <form action="" class="wide" onsubmit="return validate()">
+                  
+                    <div class=" form_info">
+                        <div class="row form_left">
+                            <div class="col l-6 m-6 c-12">
+                                <p> <label for="">Name</label></p>
+                                <input type="text" id="hoten" placeholder="Enter your name ...">
+                                <p id="error_name"></p>
+                            </div>
+                            <div  class="col l-6 m-6 c-12">
 
-                                </option>
-                            </select>
+                                <p> <label for="">emAIL aDDRESS</label></p>
+                                <input type="text" id="email" placeholder="Your email address... ...">
+                                <p id="error_email"></p>
+                            </div>
 
                         </div>
+                        <div class="row form_left">
+                            <div class="col l-6 m-6 c-12">
+                                <p> <label for="">Subject</label></p>
+                                <input type="text" id="subject" placeholder="Enter subject... ...">
+                                <p id="error_subject"></p>
+                            </div>
+                            <div  class="col l-6 m-6 c-12">
+                                <p > <label for="">ENquiry type</label></p>
+                                <select name="" id="ENquiry">
+                                    <option value="">Advertising...
+                                    </option>
+                                    <option value="Breakfast">Breakfast</option>
+                                    <option value="Vegan">Vegan</option>
+                                    <option value="Meat">Meat</option>
+                                    <option value="Dessert">Dessert</option>
+                                </select>
+                                <p id="error_ENquiry"></p>
+                            </div>
+
+                        </div>
+                       
                     </div>
+                    
                     <p class=""> <label for="">MEssages</label></p>
 
-                    <textarea name="" id="" cols="30" placeholder="Enter your messages..." 
-                    rows="10"></textarea>
+                    <textarea name="" id="messages" cols="30" placeholder="Enter your messages..." rows="10"></textarea>
+                    <p id="error_messages"></p>
+
                     <div style="display: flex;justify-content: center;">
                         <button style="text-align: center;">Submit</button>
 
@@ -119,7 +152,7 @@
 
             </div>
         </div>
-        <div class="wide row footer">
+        <div class=" grid wide row footer">
 
         </div>
 
@@ -142,8 +175,8 @@
 
     <script src="./src/js/home/header.js"></script>
     <script src="./src/js/home/navbar_menu.js"></script>
-    <script src="./src/js/home/category_list_img.js"></script>
-    <script src="./src/js/home/iteam_content-main.js"></script>
+    <script src="./src/js/home/form.js"></script>
+    <script src="./src/js/home/content_product.js"></script>
     <script src="./src/js/home/footer.js"></script>
 
 </body>
