@@ -2,13 +2,13 @@ const iteam_content_main = document.querySelector(".row .iteam_tittle");
 const iteam_array = [{
     image: 'https://bears.vn/wp-content/uploads/2019/08/1-3.jpg',
     id: 1,
-    name: "Pizza",
+    name: "Pizza thập cẩm",
     desc: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur repudiandae repellat et inventore aliquid animi ea nisi eius quas veniam quisquam ullam quos ab commodi reiciendis veritatis perferendis, dolorum harum?",
     category: 1
 },
 {
     id: 2,
-    name: "Pasta",
+    name: "Pasta- mì ý thượng hạng",
     desc: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur repudiandae repellat et inventore aliquid animi ea nisi eius quas veniam quisquam ullam quos ab commodi reiciendis veritatis perferendis, dolorum harum?",
 
     category: 2,
@@ -18,7 +18,7 @@ const iteam_array = [{
 {
     image: 'https://afamilycdn.com/150157425591193600/2021/4/20/base64-1618910967516899249294.png',
     id: 3,
-    name: "Salad",
+    name: "Salad - rau củ quả",
     desc: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur repudiandae repellat et inventore aliquid animi ea nisi eius quas veniam quisquam ullam quos ab commodi reiciendis veritatis perferendis, dolorum harum?",
 
     category: 3
@@ -26,7 +26,7 @@ const iteam_array = [{
 {
     image: 'https://www.top10vietnam.vn/wp-content/uploads/2020/06/cua-hang-bbq-chicken.jpg',
     id: 4,
-    name: "BBQ Chicken",
+    name: "BBQ Chicken  dai ngon đến từng vị",
     desc: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur repudiandae repellat et inventore aliquid animi ea nisi eius quas veniam quisquam ullam quos ab commodi reiciendis veritatis perferendis, dolorum harum?",
 
     category: 4
@@ -34,7 +34,7 @@ const iteam_array = [{
 {
     image: 'https://xebanhmithonhiky.vn/wp-content/uploads/2020/11/kinh-doanh-banh-mi-humberger-1024x768.jpg',
     id: 5,
-    name: "Humberger",
+    name: "Humberger thập cẩm",
     desc: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur repudiandae repellat et inventore aliquid animi ea nisi eius quas veniam quisquam ullam quos ab commodi reiciendis veritatis perferendis, dolorum harum?",
 
     category: 5
@@ -42,7 +42,7 @@ const iteam_array = [{
 {
     image: 'https://khoaikhau.com/wp-content/uploads/2020/09/mon-beefsteak-da-chuan-bi-xong-tai-mot-steakhouse.jpg',
     id: 6,
-    name: "Beefsteak",
+    name: "Beefsteak-thịt bò hảo hạng",
     desc: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur repudiandae repellat et inventore aliquid animi ea nisi eius quas veniam quisquam ullam quos ab commodi reiciendis veritatis perferendis, dolorum harum?",
 
     category: 6

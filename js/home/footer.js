@@ -1,6 +1,6 @@
 const footer_Js = document.querySelector(".footer");
 footer_Js.innerHTML = ` <div class="col c-3 header__logo">
-<a href="./index.html"><img src="./src/images/icon/Logo.png" alt=""></a>
+<a href="./index.html"><img src="./images/icon/Logo.png" alt=""></a>
 </div>
 <div class="col c-9 footer__menu">
 <ul class="nav-menu">
