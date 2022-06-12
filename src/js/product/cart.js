@@ -39,20 +39,24 @@ function add_cart_product(img_product, name_product, price_product) {
 
 
 
-    let trcontent = ` <tr>
-<td style="width:400px; text-align:center"><span class="naem_prod">${name_product}</span></td>
-<td>
-    <img src="${img_product}" alt="">
-</td>
-<td>
-    <p><span>${price_product}</span></p>
-<td>
-    <input type="number" style="width: 80%; border:1px solid gray;" value="1" min="1" max="">
-</td>
-<td style="cursor: pointer;">
-    <button>Xóa</button>
-</td>
-</tr>`;
+    let trcontent = `
+        <tr>
+            <td style="">
+                <span class="naem_prod">${name_product}</span>
+            </td>
+
+            <td>
+                    <img src="${img_product}" alt="">
+            </td>
+            <td>
+                <p><span>${price_product}</span></p>
+            <td>
+                <input type="number" style="" value="1" min="1" max="">
+            </td>
+            <td style="cursor: pointer;">
+                <button>Xóa</button>
+            </td>
+        </tr>`;
     addtr.innerHTML = trcontent;
     let cartTable = document.querySelector("tbody");
     cartTable.append(addtr);
@@ -85,31 +89,31 @@ function total_products() {
 }
 
 
-function delete_cart(){
+function delete_cart() {
     let carItem = document.querySelectorAll('tbody tr');
-  
+
     for (let i = 0; i < carItem.length; i++) {
-let proct_delete=document.querySelectorAll("td button");
-// console.log(proct_delete)
-proct_delete[i].addEventListener("click",function(e) {
+        let proct_delete = document.querySelectorAll("td button");
+        // console.log(proct_delete)
+        proct_delete[i].addEventListener("click", function (e) {
 
-    let proct_delete_item=e.target;
-    let cartitem= proct_delete_item.parentElement.parentElement;
-    cartitem.remove();
-    total_products()
+            let proct_delete_item = e.target;
+            let cartitem = proct_delete_item.parentElement.parentElement;
+            cartitem.remove();
+            total_products()
 
-})
+        })
 
 
     }
 }
 
-function inputchange(){
+function inputchange() {
     let carItem = document.querySelectorAll('tbody tr');
-  
+
     for (let i = 0; i < carItem.length; i++) {
-        let inputValue =carItem[i].querySelector("td input");
-        inputValue.addEventListener("change",function(){
+        let inputValue = carItem[i].querySelector("td input");
+        inputValue.addEventListener("change", function () {
             total_products();
         })
     }
@@ -118,7 +122,7 @@ function inputchange(){
 
 
 
-const opent_cart=document.querySelector(".cart_open_js");
+const opent_cart = document.querySelector(".cart_open_js");
 
 
 var container223 = document.querySelector('.container223');

@@ -8,7 +8,7 @@ header.innerHTML = ` <div class="col l-2 m-2 header__logo">
                             <li><a href="./index.html">Home</a></li>
                             <li><a href="./product.html">Products</a></li>
                             <li><a href="#">About Us</a></li>
-                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="./contactUs.html">Contact Us</a></li>
                         </ul>
                     </div>
                     <div class="col l-4 m-3 header__signup">

@@ -33,17 +33,20 @@
     color: #000000;
 }
 
-.hien{
+.hien {
     display: none;
 }
+
 @media (max-width:740px) {
     .wide {
         margin: 0px -10px;
         padding: 0px 10px;
     }
-    .hien{
+
+    .hien {
         display: block;
     }
+
     .header {
         height: 95px;
     }
@@ -56,17 +59,22 @@
     }
 
     .content_main-left {}
-form.hien{
-    width: 40%;
-    /* border:1px solid #000000; */
-    margin-bottom: 40px;
-}
-form.hien select{font-weight: 600;
-    letter-spacing: -0.02em;
-    width: 100%;font-size: 16px;
-    padding: 18px 0px 18px 20px;
-    border: 1px solid rgba(0, 0, 0, 0.6);
-}
+
+    form.hien {
+        width: 40%;
+        /* border:1px solid #000000; */
+        margin-bottom: 40px;
+    }
+
+    form.hien select {
+        font-weight: 600;
+        letter-spacing: -0.02em;
+        width: 100%;
+        font-size: 16px;
+        padding: 18px 0px 18px 20px;
+        border: 1px solid rgba(0, 0, 0, 0.6);
+    }
+
     .content_main-left ul li a {
         font-size: 20px;
         display: inline;
@@ -98,28 +106,32 @@ form.hien select{font-weight: 600;
         padding-bottom: 15px;
         margin-bottom: 10px;
     }
-    .container223{
+
+    .container223 {
         background-color: rgba(0, 0, 0, 0.6);
         position: fixed;
-        ;
         right: 0;
         left: 0;
         display: none;
         top: 0;
         bottom: 0;
     }
-    .cart_pro {
-        animation: modalShow 0.3s;
-        float: right;
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        width: 300px;
+
+    .container223 .cart_pro {
+        /* animation: modalShow 0.3s; */
+        /* float: right; */
+       width: 100%;
+
+       /* height: 100%; */
+        /* width: 300px; */
         min-height: 500px;
         border-radius: 5px;
-        background-color: #fff;
+        /* background-color: #fff; */
     }
+    .cart_pro table,.cart_pro tr ,.cart_pro td{
+        width: 100%;
+    }
+
 }
 
 @media (min-width: 740px) and (max-width: 1023px) {
@@ -145,68 +157,99 @@ form.hien select{font-weight: 600;
         margin-right: -12px;
     }
 }
+
 .container223 {
     background-color: rgba(0, 0, 0, 0.6);
-position: fixed;
-;
-right: 0;
-left: 0;
-display: none;
-top: 0;
-bottom: 0;
+    position: fixed;
+    ;
+    right: 0;
+    left: 0;
+    display: none;
+    top: 0;
+    bottom: 0;
 }
-.cart_pro{
+
+.cart_pro {
     animation: modalShow 0.3s;
-background-color: greenyellow;
-position: absolute;
-top: 50%;  left: 50%;
-transform: translate(-50%, -50%);
-border-radius: 5px;
+    /* background-color: greenyellow; */
+    position: absolute;
+    /* top: 40px; */
+    top: 50%;
+    z-index: 1;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 5px;
     width: 80%;
-    min-height: 200px;       
+    /* min-height: 100vh; */
 }
+
 .hidden {
-display: block;
+    display: block;
 }
-.cart_pro >table{
-color: white;
-font-size: 18px;
-width: 100%;
-margin: 0 auto;
-border-collapse: collapse;
+
+.cart_pro table {
+    color: black;
+    font-size: 18px;
+    /* width: 90%; */
+    background-color: burlywood;
+    /* height: 100%; */
+    margin: 0 auto;
+    border-collapse: collapse;
 }
+
 table,
 td,
 tr {
     border: 1px solid #fff;
 }
+
 table tr td img {
-    height: 110px;
+    height: 80px;
     padding: 0;
-    margin:auto;
+    margin: auto;
 }
 
-table th,td {
-text-align: center;
-padding: 8px;
+table th, td {
+    text-align: center;
+    padding: 8px;
 }
-tr td:first-child{ 
-font-weight: 600;
 
+tr td:first-child {
+    width: 380px;
+    font-weight: 600;
+
+}
+tr td input{
+    width: 80%;
+    margin: auto;
+}
+tr td:last-child{
+    width: 70px;
+}
+tr>td{
+    width: fit-content;
 }
 td button {
-padding: 10px 15px;
-background-color: rgb(244, 46, 46);
-border-radius: 5px;
-font-size:18px;
-color: azure;
+    padding: 8px 10px;
+    background-color: rgb(244, 46, 46);
+    border-radius: 5px;
+    font-size: 18px;
+    color: azure;
 }
-td input {
-border: 1px solid #ccc;
-outline: none;
-width: 80%;
-padding: 8px;
-border-radius: 10px;
+.tt_show{
+    font-size: 18px;
+    font-weight: 600;
+    padding: 15px;
 }
 
-tbody{min-height: 100px;}
+td input {
+    border: 1px solid #ccc;
+    outline: none;
+    width: 70%;
+    padding: 8px;
+    border-radius: 10px;
+}
+
+tbody {
+    /* min-height: 100px; */
+}

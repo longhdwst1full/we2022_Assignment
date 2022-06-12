@@ -82,7 +82,7 @@ ul.nav li a {
 }
 
 .nav>li:first-child a {
-    color: #F54748;
+    /* color: #F54748; */
 }
 
 .nav>li:last-child a {
@@ -278,8 +278,8 @@ img {
     cursor: pointer;
 }
 
-.category {
-    margin-top: 102px;
+.grid.wide.category {
+    padding-top: 102px;
     margin-bottom: 96px;
 }
 
@@ -338,7 +338,7 @@ img {
     align-items: center;
 }
 
-.contact {
+.grid.wide.contact {
     margin-bottom: 96px;
 }
 
@@ -725,6 +725,10 @@ body {
     .bander__img img {
         width: 100%;
     }
+    button.registration {
+    min-width: 77px;
+
+    }
     /*  */
     h1.tittle {
         font-size: 42px;
@@ -797,7 +801,7 @@ body {
 }
 
 ul li:hover a {
-    text-decoration: 3px underline green;
+   
 }
 
 .iteam {

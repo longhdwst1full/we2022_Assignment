@@ -104,8 +104,10 @@ function showProduct(data) {
     showproduct_flex.innerHTML = "";
     data.forEach((iteam, index) => {
         showproduct_flex.innerHTML += `
-            <li class="">
+            <li class=""><a href="./product.html?id=${index+1}">
             ${iteam.name}
+            </a>
+
             </li>`
     })
 }
@@ -139,7 +141,7 @@ function show_iteam_array(data) {
 
 
 
-let ul_li_a = document.querySelectorAll("ul.flex li");
+let ul_li_a = document.querySelectorAll("ul.flex li a");
 
 let inde_id;
 
@@ -147,12 +149,11 @@ let inde_id;
 function layindex() {
 
     ul_li_a.forEach(function (item, index) {
-        item.onclick = function () {
+        item.onclick = function (e) {
+            e.preventDefault();
+
             inde_id = index + 1;
-
-
             filter_prod(inde_id);
-
         }
     })
 
@@ -180,23 +181,23 @@ else {
 
 const hien_form_mobie = document.querySelector("#filterSelect");
 
-let index_data_product= hien_form_mobie.querySelector("option").getAttribute('data-index'); 
-console.log(index_data_product);    
+let index_data_product = hien_form_mobie.querySelector("option").getAttribute('data-index');
+console.log(index_data_product);
 let opption_product = document.querySelectorAll("#filterSelect>option")
 
 hien_form_mobie.addEventListener('change', function () {
     console.log(this)
     console.log(index_data_product)
-   ListCategory.forEach(function (item,index){
-       if(hien_form_mobie.value==""){
-        show_iteam_array(iteam_array)
-       }
-       else if(hien_form_mobie.value==item.name){
-           console.log(item.name,index)
-           filter_prod(Number(index)+1);
-        
-       }
-       
-   })
+    ListCategory.forEach(function (item, index) {
+        if (hien_form_mobie.value == "") {
+            show_iteam_array(iteam_array)
+        }
+        else if (hien_form_mobie.value == item.name) {
+            console.log(item.name, index)
+            filter_prod(Number(index) + 1);
+
+        }
+
+    })
 
 })

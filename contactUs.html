@@ -15,35 +15,58 @@
     <title>Document</title>
     
 </head>
+<style>
+    .iteam{
+        /* border:1px solid gray; */
+        padding: 10px;
+        text-align: center;
+        /* padding: 0; */
+    }
+    h5.iteam--description{font-size: 25px;
+    padding: 10px 0px;
+margin: 10px 0;}
+    p.iteam--description {
+    text-align: justify;
+    font-size: 15px;
+    color: #5D5D5D;
+    padding: 0 10px;
+    line-height: 1.6;
+}
+.iteam .iteam__img{
+    height: 180px;
 
+}
+.iteam .iteam__img img{
+    width: 100%;height: 100%;
+}
+</style>
 <body>
     <div class="grid wide">
         <div class="row header">
 
         </div>
         <div class="wide content ">
-            <div class="row  bander">
-                <a href="#">
-                    <img src="./src/images/imageProduct/banner.png" width="100%">
-                </a>
-
-            </div>
+            
 
             <div class="row content__main">
                 <div class="col l-2 m-3 c-0 content_main-left">
+                    <ul>
+                        <li class="all">Tất cả</li>
+                    </ul>
                     <ul class="flex" id>
 
                     </ul>
                 </div>
                 <form action="" class="hien">
                     <select name="" id="filterSelect">
-                        <option data-index="0" value="">Lọc sản phẩm</option>
-                        <option data-index="1" value="Breakfast">Breakfast</option>
-                        <option data-index="2" value="Vegan">Vegan</option>
-                        <option data-index="3" value="Meat">Meat</option>
-                        <option data-index="4" value="Dessert">Dessert</option>
-                        <option data-index="5" value="Lunch">Lunch</option>
-                        <option data-index="6" value="Chocolate">Chocolate</option>
+                        <option data-index="0" value="">Tất cả </option>
+                        <option data-index="1" value="Pizza">Pizza</option>
+                        <option data-index="2" value="Pasta">Pasta</option>
+                        <option data-index="3" value="Salad">Salad</option>
+                        <option data-index="4" value="BBQ Chicken">BBQ Chicken</option>
+                       
+                        <option data-index="5" value="Humberger">Humberger</option>
+                        <option data-index="5" value="Beefsteak">Node JS</option>
                     </select>
                 </form>
                 <div class="col l-10 m-9 c-11 content__main__tittle">
@@ -75,32 +98,7 @@
         </div>
     </div>
 
-    <div class="container223">
-        <div class="cart_pro " >
-        <table id="cart" border="1">
-            <thead>
-                <tr>
-                    <th colspan="1">Tên sản phẩm</th>
-                    <th  width="200">Ảnh</th>
-                    <th>Giá</th>
-                    <th width="200">Số lượng</th>
-                    <th> Chọn</th>
-                    <!-- <th class="text-center">Thành tiền</th> -->
-                </tr>
-            </thead>
-            <tbody>
-
-            </tbody>
-            <tfoot>
-                <tr>
-                    <td colspan="2">Tổng</td>
-                    <td class="tt">
-                        <p><span class="tt_show">0</span></p>
-                    </td>
-                </tr>
-            </tfoot>
-        </table>
-    </div>
+   
     </div>
 
 
@@ -110,10 +108,9 @@
 
     <script src="./src/js/home/header.js"></script>
     <script src="./src/js/home/navbar_menu.js"></script>
-    <script src="./src/js/product/product.js"></script>
+    <script src="./src/js/product/contacUs.js"></script>
 
     <script src="./src/js/home/footer.js"></script>
-    <script src="./src/js/product/cart.js"></script>
 
 
 
